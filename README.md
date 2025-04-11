@@ -24,7 +24,7 @@
 
    将此仓库克隆到您的本地机器：
    ```bash
-   git clone https://your-repository-url/n8n-ai-ngrok.git
+   git clone https://github.com/DuckRaiser/n8n-ai-ngrok.git
    cd n8n-ai-ngrok
    ```
 
