@@ -32,7 +32,7 @@
 
    复制示例环境文件并进行编辑：
    ```bash
-   cp env-example .env
+   cp .env.example .env
    ```
    
    在`.env`文件中设置以下必要的值：
