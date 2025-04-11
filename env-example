@@ -1,0 +1,15 @@
+# PostgreSQL配置
+POSTGRES_USER=root
+POSTGRES_PASSWORD=password
+POSTGRES_DB=n8n
+
+# n8n配置
+N8N_ENCRYPTION_KEY=super-secret-key
+N8N_USER_MANAGEMENT_JWT_SECRET=even-more-secret
+N8N_DEFAULT_BINARY_DATA_MODE=filesystem
+
+# Ngrok配置
+TIMEZONE=Asia/Shanghai
+NGROK_TOKEN=你的NGROK令牌
+NGROK_DOMAIN=你的NGROK永久域名
+URL=https://你的NGROK永久域名 
