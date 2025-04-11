@@ -143,6 +143,40 @@ docker exec -it postgres psql -U root -d n8n
 ```bash
 docker compose down
 ```
+## Upgrading
+
+* ### For Nvidia GPU setups:
+
+```bash
+docker compose --profile gpu-nvidia pull
+docker compose create && docker compose --profile gpu-nvidia up
+```
+
+* ### For Mac / Apple Silicon users
+
+```
+docker compose pull
+docker compose create && docker compose up
+```
+
+* ### For Non-GPU setups:
+
+```bash
+docker compose --profile cpu pull
+docker compose create && docker compose --profile cpu up
+```
+
+## 👓 Recommended reading
+
+n8n is full of useful content for getting started quickly with its AI concepts
+and nodes. If you run into an issue, go to [support](#support).
+
+- [AI agents for developers: from theory to practice with n8n](https://blog.n8n.io/ai-agents/)
+- [Tutorial: Build an AI workflow in n8n](https://docs.n8n.io/advanced-ai/intro-tutorial/)
+- [Langchain Concepts in n8n](https://docs.n8n.io/advanced-ai/langchain/langchain-n8n/)
+- [Demonstration of key differences between agents and chains](https://docs.n8n.io/advanced-ai/examples/agent-chain-comparison/)
+- [What are vector databases?](https://docs.n8n.io/advanced-ai/examples/understand-vector-databases/)
+
 
 ## 数据持久化
 
