@@ -119,6 +119,7 @@ services:
       - ./ngrok.yml:/etc/ngrok.yml
     depends_on:
       - n8n
+    restart: unless-stopped
 
   qdrant:
     image: qdrant/qdrant
