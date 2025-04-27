@@ -4,4 +4,4 @@ tunnels:
     n8n:
         proto: http
         addr: n8n:5678
-        domain: ${NGROK_DOMAIN} 
+        domain: 你的NGROK永久域名 
