@@ -64,17 +64,18 @@
 
    ### 对于MacOS / Apple Silicon用户：
    如果您想在本地运行Ollama以获得更快的推理速度，请安装[Ollama](https://ollama.com/)并按照以下步骤操作：
+   
+   然后修改n8n服务中的`docker-compose.yml`中的`ollama:11434`全部替换为`host.docker.internal:11434`
    ```bash
    docker compose up -d
    ```
-   然后修改n8n服务中的`OLLAMA_HOST`环境变量为`host.docker.internal:11434`
 
    ### 对于其他用户（CPU模式）：
    ```bash
    docker compose --profile cpu up -d
    ```
 
-5. **访问n8n**
+6. **访问n8n**
 
    启动服务后，您可以通过以下方式访问您的n8n实例：
    - 本地访问: http://localhost:5678
